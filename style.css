@@ -47,6 +47,7 @@ html {
   background: #f1ae04;
   padding: 1.5rem;
   border-radius: 2.5rem 2.5rem 0 0;
+  transition: background 0.5s;
 }
 .card-top-text h1 {
   text-transform: uppercase;
@@ -138,6 +139,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:background 2.5s;
 }
 
 .price span {
@@ -150,4 +152,25 @@ html {
 }
 .price span:last-child {
   font-weight: bold;
+}
+
+/* ANIMATION EFFECT  */
+
+.container.change.card-top{
+    background-color: #d35246
+}
+.shoe-2{
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+}
+.container.change.shoe-1{
+    transform:translateX(-50rem) rotate(45deg)
+}
+.shoe-1{
+    transition: transform 1s;
+}
+.shoe-2{
+    transition: transform 1s;
 }
